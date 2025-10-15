@@ -38,6 +38,14 @@ struct StateBindingII : View {
         VStack {
             Text("received text: \(number)")
                 .foregroundColor(.gray)
+            
+            Button("Increment") {
+                number += 1
+            }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(5)
         }
     }
 }
